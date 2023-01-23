@@ -1,4 +1,4 @@
-import axios, { Axios } from 'axios'
+import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import Loading from './Loading';
 import Navbar from './Navbar'
@@ -30,7 +30,7 @@ const Home = () => {
 
   return (
     <div>
-        {isLoading == true ? (<Loading/>) :(
+        {isLoading === true ? (<Loading/>) :(
             <div className="container">
             <Navbar/>
             <div className="row">
